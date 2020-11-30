@@ -9,4 +9,4 @@ const schema = mongoose.Schema({
 })
 
 const model = mongoose.model("threads",schema);
-module.export  = model;
+module.exports  = model;

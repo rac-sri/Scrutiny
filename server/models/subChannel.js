@@ -12,4 +12,4 @@ const schema = mongoose.Schema({
 })
 
 const model = mongoose.model("subChannels",schema);
-module.export  = model;
+module.exports  = model;
