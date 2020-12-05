@@ -100,7 +100,7 @@ router.post("/subChannel/:id", async (req, res) => {
 router.post("/threads/:id", async (req, res) => {
   const create = await threads.create({
     heading: req.body.heading,
-    message: req.body.messages,
+    message: req.body.message,
     subChannel: mongoose.Types.ObjectId(req.params.id),
   });
   res.send(create);
