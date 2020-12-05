@@ -25,13 +25,15 @@ export default function Wrapper() {
 
   return (
     <Container>
-      {cards.map((value, index) => {
-        return (
-          <Link to={`/subchannel/${value._id}`}>
-            <Card card={value} key={index} />
-          </Link>
-        );
-      })}
+      <div style={{ display: "flex", gap: "40px" }}>
+        {cards.map((value, index) => {
+          return (
+            <Link to={`/subchannel/${value._id}`}>
+              <Card card={value} key={index} />
+            </Link>
+          );
+        })}
+      </div>
     </Container>
   );
 }

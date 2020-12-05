@@ -3,7 +3,9 @@ import { Router } from "@reach/router";
 import TopHolder from "./Channel/wrapper";
 import SubChannel from "./SubChannels/wrapper";
 import store from "./redux/store";
+import Login from "./login";
 import { Provider } from "react-redux";
+import SignUp from "./signup";
 
 function App() {
   return (
@@ -13,7 +15,9 @@ function App() {
         <br />
         <br />
         <Router>
-          <TopHolder path="/" default />
+          <Login path="/login" default />
+          <SignUp path="/signup" />
+          <TopHolder path="/channel" />
           <SubChannel path="/subchannel/:id" />
         </Router>
       </div>

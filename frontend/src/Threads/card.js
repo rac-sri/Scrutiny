@@ -15,7 +15,7 @@ export default function Card(props) {
       updateThreads(data.data);
     };
     fetch();
-  }, []);
+  }, [props]);
 
   console.log(threads);
   return (
