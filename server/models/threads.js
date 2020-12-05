@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const schema = mongoose.Schema({
     heading:{type:String},
-    messages:[String],
+    message: String,
     subChannel:{
         type:mongoose.Types.ObjectId
     }
